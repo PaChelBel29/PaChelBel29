@@ -1,0 +1,25 @@
+﻿<Page x:Class="BitCoinSimulator.Frames.Tutorial_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BitCoinSimulator.Frames"
+      mc:Ignorable="d" 
+     d:DesignHeight="768" d:DesignWidth="1024"
+      Title="Tutorial_Page">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/Scene1.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=" 4*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="User_button" Width="700" Height="40" Style="{StaticResource Tutorial_Round_button}"></Button>
+
+        <TextBlock x:Name="Tutorial_Chat_Text_Block" Grid.Row="1" Margin="15" Style="{StaticResource TutorialText}" >
+
+        </TextBlock>
+    </Grid>
+</Page>
